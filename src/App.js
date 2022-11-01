@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // components
-import HeaderComponent from './components/HeaderComponent';
-import FooterComponent from './components/FooterComponent';
+import FooterComponent from './components/Footer-Header/FooterComponent';
+import HeaderComponent from './components/Footer-Header/HeaderComponent';
 
 // user-components
 import RoutesWithUserChatComponent from './components/user/RoutesWithUserChatComponent';
