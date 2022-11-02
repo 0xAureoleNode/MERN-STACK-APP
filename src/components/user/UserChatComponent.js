@@ -1,4 +1,5 @@
 import '../../chat.css';
+import { Fragment } from 'react';
 const UserChatComponent = () => {
   return (
     <>
@@ -6,7 +7,7 @@ const UserChatComponent = () => {
       <label className="chat-btn" htmlFor="check">
         <i className="bi bi-chat-dots comment" />
         <span className="position-absolute top-0 start-10 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
-        <i class="bi bi-x-circle close" />
+        <i className="bi bi-x-circle close" />
       </label>
       <div className="chat-wrapper">
         <div className="chat-header">
@@ -14,15 +15,15 @@ const UserChatComponent = () => {
         </div>
         <div className="chat-form">
           <div className="cht-msg">
-            {Array.from({ length: 20 }).map((_, id) => (
-              <>
+            {Array.from({ length: 20 }).map((_, idx) => (
+              <Fragment key={idx}>
                 <p>
                   <b>You wrote:</b> Hello, world! This is a toast message.
                 </p>
                 <p className="bg-primary p-3 ms-4 text-light rounded-pill">
                   <b>Support wrote:</b>Hello, world! This is a toast message
                 </p>
-              </>
+              </Fragment>
             ))}
           </div>
           <textarea
