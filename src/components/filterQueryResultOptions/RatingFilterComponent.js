@@ -1,4 +1,4 @@
-import { Rating, RatingView } from 'react-simple-star-rating';
+import { Rating } from 'react-simple-star-rating';
 import Form from 'react-bootstrap/Form';
 import { Fragment } from 'react';
 
