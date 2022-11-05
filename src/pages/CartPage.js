@@ -23,7 +23,7 @@ const CartPage = () => {
             </ListGroup.Item>
             <ListGroup.Item>
               <LinkContainer to="/user/order-details">
-                <Button type="button">Procced To Checkout</Button>
+                <Button type="button">Proceed To Checkout</Button>
               </LinkContainer>
             </ListGroup.Item>
           </ListGroup>
